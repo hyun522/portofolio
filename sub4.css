@@ -1,0 +1,67 @@
+* { margin:0; padding:0;}
+body { line-height:1; font-family: 'Gothic A1', sans-serif;}
+img { vertical-align:top;}
+a { text-decoration:none;}
+ul,ol,li { list-style:none;}
+table { border-collapse:collapse;}
+
+
+/* slider 구간 이미지 */
+#header { overflow:hidden;}
+.h_slider { width:100vw; height:42px; 
+                overflow:hidden;
+            } 
+.h_slider .wrap { height:90px; transition:all .5s; }
+.h_slider .wrap > a > img { width:100vw; height:42px;}
+
+/* 메인메뉴 구간  */
+.h_mainGnb { display:flex; justify-content:center; 
+position:fixed; width:100%;
+z-index:10; border-bottom:1px solid #000;
+}
+  
+.h_mainGnb .h1_center { display:flex; justify-content:space-between; align-items:center;
+     width:1200px; }
+
+/* depth1메뉴 구간 */
+.h_mainGnb .h1_center .depth1 { display:flex;  }
+.h_mainGnb .h1_center .depth1 > li > a { display:block; padding:30px 25px; color:#000;}
+.h_mainGnb .h1_center .h1_center_icon { color:#000;}
+.h_mainGnb .h1_center .h1_center_icon > i { margin-left:10px;}
+  
+  /* deth2메뉴 구간 */
+.d2 {
+  width:100vw;
+  height:0px;
+  position:absolute;
+  left:0;
+  top:76px;
+  display:flex;
+  background-color:#fff;
+  overflow: hidden;
+}
+.d2 .d2_center { width:1200px; margin:0 auto; display:none; }
+.d2 .d2_center .depth2 { width:400px; display:flex; margin:0 auto; line-height:80px; }
+.d2 .d2_center .depth2 li { margin:0 10px; }
+.d2 .d2_center  .depth2 li a {  color:#000; text-align:center;}
+  
+/* h_mainGnb에 on 붙었을때 */
+.h_mainGnb.on { background-color:#fff;  top:0; left:0; }
+.h_mainGnb.on .h1_center .depth1 {color:#000; background-color:#fff;}
+.h_mainGnb.on .h1_center .depth1 > li > a {color:#000;}
+.h_mainGnb.on .h1_center .h1_center_icon { color:#000;}
+  
+/* h_mainGnb에 hover 붙었을때 */
+.h_mainGnb:hover { background-color:#fff; }
+.h_mainGnb:hover .h1_center .depth1 > li > a {color:#000;}
+.h_mainGnb:hover .h1_center .h1_center_icon { color:#000;}
+
+/* container */
+/* c1 */
+.c1 { display:flex; justify-content:center;}
+.c1 .c1_center { width:1200px;} 
+.c1 .c1_center .c1_top { padding:161px 0 160px 200px; text-indent: -15px; line-height:40px; font-size:20px; }
+.c1 .c1_center .c1_bot .c1_bot_did1 { display: flex; justify-content:space-between; }
+.c1 .c1_center .c1_bot .c1_bot_did1 > img { width:700px; height:500px; margin-bottom:160px;}
+.c1 .c1_center .c1_bot .c1_bot_did1 .c1_bot_did1_text h2 { line-height:30px; margin-top:200px; font-weight:700;}
+.c1 .c1_center .c1_bot .c1_bot_did1 .c1_bot_did1_text p { line-height:25px; margin-top:10px;}
